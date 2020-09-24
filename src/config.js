@@ -9,6 +9,14 @@ import Klaim from "./components/Klaim/Klaim";
 import CekStatusKlaim from "./components/CekStatusKlaim/CekStatusKlaim";
 import KPJ from "./components/KPJ/KPJ";
 import CekIbu from "./components/CekIbu/CekIbu";
+import Pengaduan from "./components/Pengaduan/Pengaduan";
+import Ketidaksesuaian from "./components/Ketidaksesuaian/Ketidaksesuaian";
+import AkunSIPP from "./components/AkunSIPP/AkunSIPP";
+import DaftarTenaga from "./components/DaftarTenaga/DaftarTenaga";
+import DaftarPerusahaan from "./components/DaftarPerusahaan/DaftarPerusahaan";
+import ResetAkun from "./components/ResetAkun/ResetAkun";
+import InfoProgram from "./components/InfoProgram/InfoProgram";
+import InfoJHT from "./components/InfoJHT/InfoJHT";
 import LinkList from "./components/SimulasiManfaat/LinkList";
 
 const config = {
@@ -58,6 +66,38 @@ const config = {
     {
       widgetName: "CekIbu",
       widgetFunc: (props) => <CekIbu {...props} />,
+    },
+    {
+      widgetName: "Pengaduan",
+      widgetFunc: (props) => <Pengaduan {...props} />,
+    },
+    {
+      widgetName: "Ketidaksesuaian",
+      widgetFunc: (props) => <Ketidaksesuaian {...props} />,
+    },
+    {
+      widgetName: "AkunSIPP",
+      widgetFunc: (props) => <AkunSIPP {...props} />,
+    },
+    {
+      widgetName: "DaftarPerusahaan",
+      widgetFunc: (props) => <DaftarPerusahaan {...props} />,
+    },
+    {
+      widgetName: "DaftarTenaga",
+      widgetFunc: (props) => <DaftarTenaga {...props} />,
+    },
+    {
+      widgetName: "ResetAkun",
+      widgetFunc: (props) => <ResetAkun {...props} />,
+    },
+    {
+      widgetName: "InfoProgram",
+      widgetFunc: (props) => <InfoProgram {...props} />,
+    },
+    {
+      widgetName: "InfoJHT",
+      widgetFunc: (props) => <InfoJHT {...props} />,
     },
     {
       widgetName: "javascriptLinks",

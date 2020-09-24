@@ -8,7 +8,7 @@ const LearningOptions = (props) => {
   const options = [
     {
       text: "Info Program BPJamsostek",
-      handler: props.actionProvider.handleJavascriptList,
+      handler: props.actionProvider.handleInfoProgram,
       id: 1,
     },
     { text: "Simulasi Manfaat", 
@@ -25,7 +25,10 @@ const LearningOptions = (props) => {
     },
     { text: "Cek Status Kepesertaan", handler: () => {}, id: 5 },
     { text: "Cek Saldo", handler: () => {}, id: 6 },
-    { text: "Pengaduan", handler: () => {}, id: 7 },
+    { text: "Pengaduan", 
+      handler: props.actionProvider.handlePengaduan,
+      id: 7
+    },
     { text: "Program Vokasi", handler: () => {}, id: 8 },
     { text: "Daftar Peserta BPJS Ketenagakerjaan", handler: () => {}, id: 9 },
     { text: "Manfaat Layanan Tambahan", handler: () => {}, id: 10 },
