@@ -4,6 +4,10 @@
     flex-wrap: wrap;
 }
 
+.btn-light{
+    background-color: #E5E5E5 !important;
+  }
+  
 .learning-option-button {
     padding: 0.5rem;
     /* border-radius: 25px; */
