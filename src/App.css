@@ -16,12 +16,34 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
+  margin-right: 0px !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px !important;
   color: white;
+}
+
+.react-chatbot-kit-chat-inner-container{
+  margin: 0px !important;
+  height: 100vh !important;
+}
+
+.react-chatbot-kit-chat-message-container{
+  height: 87vh !important;
+}
+
+.btn{
+  font-size: 13px !important;
+}
+
+span{
+  font-size: 13px !important;
+}
+
+.react-chatbot-kit-user-chat-message{
+  font-size: 13px !important;
 }
 
 .App-link {

@@ -8834,10 +8834,10 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
-react-chatbot-kit@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/react-chatbot-kit/-/react-chatbot-kit-1.0.5.tgz#ecac7c5c5ad9d701bf28d1eb9eceeb9867f353fc"
-  integrity sha512-wzktupbkH2LqZZWxTK3bo5l4FdVTp8fnLrzn0rMCn71PDTxJAbH+FkESxrPAfBwQnSVQc3Pbs2Z9dp1ViuluYg==
+react-chatbot-kit@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-chatbot-kit/-/react-chatbot-kit-1.0.7.tgz#18c10a849352b2685abe68c3ad374905ff05f73a"
+  integrity sha512-ZhOKYJizSS4LUBAnMmdW5tOdh469T5mNTERN+qqDbWALC9b0hi/XZSOlUS486LriE4p0s6xcsSmCZrRZrdfSrQ==
   dependencies:
     classnames "^2.2.6"
     css-loader "^3.5.1"
