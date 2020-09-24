@@ -104,6 +104,8 @@ const config = {
     {
       widgetName: "InfoJHT",
       widgetFunc: (props) => <InfoJHT {...props} />,
+    },
+    {
       widgetName: "CekStatusKepesertaan",
       widgetFunc: (props) => <CekStatusKepesertaan {...props} />,
     },
