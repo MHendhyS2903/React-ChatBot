@@ -18,6 +18,12 @@ import ResetAkun from "./components/ResetAkun/ResetAkun";
 import InfoProgram from "./components/InfoProgram/InfoProgram";
 import InfoJHT from "./components/InfoJHT/InfoJHT";
 import LinkList from "./components/SimulasiManfaat/LinkList";
+import CekStatusKepesertaan from "./components/CekStatusKepesertaan/CekStatusKepesertaan";
+import ListCekSaldo from "./components/CekSaldo/ListCekSaldo";
+import BelumPunyaSSO from "./components/BelumPunyaSSO/BelumPunyaSSO";
+import TanpaRegistrasi from "./components/TanpaRegistrasi/TanpaRegistrasi";
+import DaftarBPJS from "./components/DaftarBPJS/ListDaftar";
+import KritikSaran from "./components/KritikSaran/ListKritikSaran";
 
 const config = {
   botName: "LearningBot",
@@ -98,6 +104,28 @@ const config = {
     {
       widgetName: "InfoJHT",
       widgetFunc: (props) => <InfoJHT {...props} />,
+      widgetName: "CekStatusKepesertaan",
+      widgetFunc: (props) => <CekStatusKepesertaan {...props} />,
+    },
+    {
+      widgetName: "CekSaldo",
+      widgetFunc: (props) => <ListCekSaldo {...props} />,
+    },
+    {
+      widgetName: "BelumPunyaSSO",
+      widgetFunc: (props) => <BelumPunyaSSO {...props} />,
+    },
+    {
+      widgetName: "TanpaRegistrasi",
+      widgetFunc: (props) => <TanpaRegistrasi {...props} />,
+    },
+    {
+      widgetName: "DaftarBPJS",
+      widgetFunc: (props) => <DaftarBPJS {...props} />,
+    },
+    {
+      widgetName: "KritikSaran",
+      widgetFunc: (props) => <KritikSaran {...props} />,
     },
     {
       widgetName: "javascriptLinks",

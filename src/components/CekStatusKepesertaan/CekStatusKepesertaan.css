@@ -1,0 +1,45 @@
+.learning-options-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.learning-option-button {
+    padding: 0.5rem;
+    /* border-radius: 25px; */
+    /* background: transparent; */
+    /* border: 1px solid green; */
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 1px;
+    width: 200px;
+}
+
+.card-body {
+    padding: 5px !important;
+    margin-top: 0px !important;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    padding: 5px !important;
+    font-size: 13px !important;
+}
+
+.form-group {
+    margin-bottom: 5px !important;
+    text-align: start !important;
+}
+
+form{
+    margin-top: 0px !important;
+}
+
+button{
+    margin: 2.5px !important;
+}
+
+label{
+    color: black;
+    font-size: 13px !important;
+}

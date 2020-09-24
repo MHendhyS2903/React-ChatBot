@@ -23,17 +23,28 @@ const LearningOptions = (props) => {
       handler: props.actionProvider.handleKlaim,
       id: 4
     },
-    { text: "Cek Status Kepesertaan", handler: () => {}, id: 5 },
-    { text: "Cek Saldo", handler: () => {}, id: 6 },
+    { text: "Cek Status Kepesertaan",
+      handler: props.actionProvider.handleCekStatusKepesertaan,
+      id: 5
+    },
+    { text: "Cek Saldo",
+      handler: props.actionProvider.handleCekSaldo,
+      id: 6
+    },
     { text: "Pengaduan", 
       handler: props.actionProvider.handlePengaduan,
       id: 7
     },
     { text: "Program Vokasi", handler: () => {}, id: 8 },
-    { text: "Daftar Peserta BPJS Ketenagakerjaan", handler: () => {}, id: 9 },
+    { text: "Daftar Peserta BPJS Ketenagakerjaan",
+      handler: props.actionProvider.handleDaftarBPJS,
+      id: 9
+    },
     { text: "Manfaat Layanan Tambahan", handler: () => {}, id: 10 },
     { text: "Testimoni terkait pelayanan BPJS Jamsostek", handler: () => {}, id: 11 },
-    { text: "Kritik dan Saran", handler: () => {}, id: 12 },
+    { text: "Kritik dan Saran",
+      handler: props.actionProvider.handleKritikSaran,
+      id: 12 },
   ];
 
   const optionsMarkup = options.map((option) => (
