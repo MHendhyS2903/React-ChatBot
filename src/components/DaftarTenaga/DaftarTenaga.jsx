@@ -17,28 +17,33 @@ const LearningOptions = (props) => {
   const optionsMarkup = options.map((option) => (
     <div className="card">
         <div className="card-body">
-            <form>
                 <div className="form-group">
                     <label for="formGroupExampleInput">Masukkan Nama Tenaga Kerja</label>
                     <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Masukan Angka"></input>
                 </div>
                 <div className="form-group">
-                    <label for="formGroupExampleInput">Masukkan Alamat Tenaga Kerja</label>
+                    <label htmlfor="formGroupExampleInput">Masukkan Alamat Tenaga Kerja</label>
                     <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Masukan Angka"></input>
                 </div>
                 <div className="form-group">
-                    <label for="formGroupExampleInput">Masukkan No Telp Tenaga Kerja</label>
+                    <label htmlfor="formGroupExampleInput">Masukkan No Telp Tenaga Kerja</label>
                     <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Masukan Angka"></input>
                 </div>
                 <div className="form-group">
-                    <label for="formGroupExampleInput">Masukkan Estimasi Jumlah Tenaga Kerja</label>
+                    <label htmlfor="formGroupExampleInput">Masukkan Estimasi Jumlah Tenaga Kerja</label>
                     <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Masukan Angka"></input>
                 </div>
                 <button 
-                className="btn btn-outline-success"
-                onClick={option.handler}>Ke Menu Awal</button>
-                <button type="button" className="btn btn-success">Laporkan</button>
-            </form>
+                className="btn btn-success back"
+                onClick={props.actionProvider.handleJavascriptList}>
+                  Ke Menu Awal
+                </button>
+
+                <button
+                className="btn btn-success"
+                key={option.id}>
+                  Hitung
+                </button>
         </div>
     </div>
     

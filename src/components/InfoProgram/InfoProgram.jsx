@@ -12,15 +12,15 @@ const LearningOptions = (props) => {
       id: 1,
     },
     { text: "Program JP", 
-      handler: props.actionProvider.handleDaftarPerusahaan,
+      handler: props.actionProvider.handleInfoJP,
       id: 2 
     },
     { text: "Program JKK", 
-      handler: props.actionProvider.handleDaftarTenaga,
+      handler: props.actionProvider.handleInfoJKK,
       id: 3 
     },
     { text: "Program JKM", 
-      handler: props.actionProvider.handleKetidaksesuaian,
+      handler: props.actionProvider.handleInfoJKM,
       id: 4
     },
   ];
@@ -28,17 +28,40 @@ const LearningOptions = (props) => {
 
   const optionsMarkup = options.map((option) => (
     <li key={option.id} className="link-list-item">
-      <button
-      className="learning-option-button btn btn-light text-left"
-      key={option.id}
-      onClick={option.handler}
-    >
-      {option.text}
-    </button>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+      <text
+      style={{
+        backgroundColor: "#F8F8F8",
+      }}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-list-item-url"
+        key={option.id}
+        onClick={option.handler}
+      >
+        {option.text}
+        <i className="fa fa-angle-right"></i>
+      </text>
     </li>
   ));
 
-  return <ul className="link-list">{optionsMarkup}</ul>;
+  return (
+    <ul className="link-list">
+      <li className="link-list-item">
+        <text
+          style={{
+            backgroundColor: "#fff",
+          }}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-list-item-url head"
+        >
+          Daftar BPJS Ketenagakerjaan
+        </text>
+      </li>
+      {optionsMarkup}
+    </ul>
+  );
 };
 
 export default LearningOptions;

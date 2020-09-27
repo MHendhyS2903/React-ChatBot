@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./InfoJHT.css";
+import "./InfoJKK.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

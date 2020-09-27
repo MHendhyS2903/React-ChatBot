@@ -34,13 +34,16 @@ const LearningOptions = (props) => {
                     <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Masukan Angka"></input>
                 </div>
                 <button 
-                className="btn btn-outline-success"
-                onClick={props.actionProvider.handleResetAkun}>Ke Menu Awal</button>
+                className="btn btn-success back"
+                onClick={props.actionProvider.handleJavascriptList}>
+                  Ke Menu Awal
+                </button>
 
-<button
+                <button
                 className="btn btn-success"
-                key={option.id}
-                onClick={props.actionProvider.handleConsole}>Lanjut</button>
+                key={option.id}>
+                  Hitung
+                </button>
                 {/* <button 
                 className="btn btn-outline-success"
                 onClick={props.actionProvider.handleJavascriptList}>Ke Menu Awal</button> */}

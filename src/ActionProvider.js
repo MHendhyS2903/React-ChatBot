@@ -64,6 +64,17 @@ class ActionProvider {
 
     this.updateChatbotState(message);
   };
+  
+  handleInfoAntrian = () => {
+    const message = this.createChatBotMessage(
+      "Untuk mengetahui informasi tentang antrian silahkan mengunjungi https://bit.ly/3i8E5Uk",
+      {
+        widget: "",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
 
   handleKPJ = () => {
     const message = this.createChatBotMessage(
@@ -226,7 +237,7 @@ class ActionProvider {
   };
   handleTanpaRegistrasi = () => {
     const message = this.createChatBotMessage(
-      "Tanpa Registrasi",
+      "Cek Saldo Tanpa Registrasi",
       {
         widget: "TanpaRegistrasi",
       }
@@ -237,7 +248,7 @@ class ActionProvider {
 
   handleInfoJHT = () => {
     const message = this.createChatBotMessage(
-      "JKK adalah program Jamsostek yang dikelola BPJS Ketenagakerjaan sebagai asuransi jiwa bagi peserta. Manfaat program ini berupa uang tunai yang diberikan kepada ahli waris dari peserta yang meninggal dunia saat kepesertaan masih aktif dan bukan akibat kecelakaan kerja.",
+      "JHT adalah program nasional yang dijalankan berdasarkan prinsip asuransi sosial atau tabungan wajib. Tujuannya adalah menjamin setiap peserta menerima sejumlah uang tunai secara sekaligus apabila memasuki masa pensiun di kemudian hari.",
       {
         widget: "InfoJHT",
       }
@@ -245,6 +256,40 @@ class ActionProvider {
 
     this.updateChatbotState(message);
   };
+  
+  handleInfoJP = () => {
+    const message = this.createChatBotMessage(
+      "JP adalah Program ini memberi jaminan berupa uang tunai setiap bulan kepada peserta yang memasuki masa pensiun, peserta yang mengalami cacat total tetap, atau keluarga ahli waris dari peserta yang meninggal dunia.",
+      {
+        widget: "InfoJP",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+
+  handleInfoJKK = () => {
+    const message = this.createChatBotMessage(
+      "JKK adalah manfaat berupa uang tunai dan/atau pelayanan kesehatan yang diberikan pada saat Pekerja mengalami kecelakaan kerja atau penyakit yang disebabkan oleh lingkungan kerja.",
+      {
+        widget: "InfoJKK",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+
+  handleInfoJKM = () => {
+    const message = this.createChatBotMessage(
+      "JKK adalah program Jamsostek yang dikelola BPJS Ketenagakerjaan sebagai asuransi jiwa bagi peserta. Manfaat program ini berupa uang tunai yang diberikan kepada ahli waris dari peserta yang meninggal dunia saat kepesertaan masih aktif dan bukan akibat kecelakaan kerja.",
+      {
+        widget: "InfoJKM",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+
   handleDaftarBPJS = () => {
     const message = this.createChatBotMessage(
       "Daftar BPJS Ketenagakerjaan",
@@ -274,6 +319,9 @@ class ActionProvider {
       "2. Membawa 1 lembar fotokopi KTP dan KK, 1 lembar fotokopi KTP atau akta kelahiran bagi peserta yang belum punya, 1 lembar pas foto peserta ukuran 3 x 4.\n" +
       "3. Menyiapkan bukti Virtual account / e-ID yang telah dicetak.\n" +
       "4. Bukti pembayaran iuran BPJS Kesehatan dari bank/PPOB.",
+      {
+        widget: "InfoJKM"
+      }
     );
 
     this.updateChatbotState(message);
@@ -293,6 +341,21 @@ class ActionProvider {
   handleBeriKritikSaran = () => {
     const message = this.createChatBotMessage(
       "Silahkan tuliskan kritik dan saran di kolom pesan anda. Terima Kasih :)",
+
+      {
+        widget: "InfoJKM"
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+
+  handleKosong = () => {
+    const message = this.createChatBotMessage(
+      "Mohon maaf, menu belum bersedia",
+      {
+        widget: "javascriptLinks",
+      }
     );
 
     this.updateChatbotState(message);

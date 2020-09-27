@@ -17,6 +17,9 @@ import DaftarPerusahaan from "./components/DaftarPerusahaan/DaftarPerusahaan";
 import ResetAkun from "./components/ResetAkun/ResetAkun";
 import InfoProgram from "./components/InfoProgram/InfoProgram";
 import InfoJHT from "./components/InfoJHT/InfoJHT";
+import InfoJP from "./components/InfoJP/InfoJP";
+import InfoJKK from "./components/InfoJKK/InfoJKK";
+import InfoJKM from "./components/InfoJKM/InfoJKM";
 import LinkList from "./components/SimulasiManfaat/LinkList";
 import CekStatusKepesertaan from "./components/CekStatusKepesertaan/CekStatusKepesertaan";
 import ListCekSaldo from "./components/CekSaldo/ListCekSaldo";
@@ -106,6 +109,18 @@ const config = {
       widgetFunc: (props) => <InfoJHT {...props} />,
     },
     {
+      widgetName: "InfoJP",
+      widgetFunc: (props) => <InfoJP {...props} />,
+    },
+    {
+      widgetName: "InfoJKK",
+      widgetFunc: (props) => <InfoJKK {...props} />,
+    },
+    {
+      widgetName: "InfoJKM",
+      widgetFunc: (props) => <InfoJKM {...props} />,
+    },
+    {
       widgetName: "CekStatusKepesertaan",
       widgetFunc: (props) => <CekStatusKepesertaan {...props} />,
     },
@@ -131,7 +146,7 @@ const config = {
     },
     {
       widgetName: "javascriptLinks",
-      widgetFunc: (props) => <LinkList {...props} />,
+      widgetFunc: (props) => <LearningOptions {...props} />,
       props: {
         options: [
           {

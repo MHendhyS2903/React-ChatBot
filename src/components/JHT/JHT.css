@@ -4,10 +4,6 @@
   flex-wrap: wrap;
 }
 
-.btn-light{
-  background-color: #E5E5E5 !important;
-}
-
 .learning-option-button {
   padding: 0.5rem;
   /* border-radius: 25px; */
@@ -17,6 +13,19 @@
   margin-right: 3px;
   margin-bottom: 1px;
   width: 200px;
+}
+
+.btn{
+  /* background-color: red !important; */
+  width: 45% !important;
+  border-radius: 50px !important;
+}
+
+.back{
+  width: 45% !important;
+  background-color: white;
+  color: #5FB763;
+  ;
 }
 
 .card-body {

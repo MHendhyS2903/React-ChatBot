@@ -28,10 +28,20 @@
 .react-chatbot-kit-chat-inner-container{
   margin: 0px !important;
   height: 100vh !important;
+  width: 500px !important;
 }
 
 .react-chatbot-kit-chat-message-container{
   height: 87vh !important;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  width: auto !important;
+  margin-left: 0 !important;
+} 
+
+.react-chatbot-kit-chat-container {
+  width: 500px !important;
 }
 
 .btn{
@@ -48,6 +58,20 @@ span{
 
 .App-link {
   color: #61dafb;
+}
+
+.link-list-item-url {
+  text-decoration: none;
+  margin: 0 !important;
+  display: block;
+  color: #1d1d1d;
+  background-color: #f1f1f1;
+  padding: 8px;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 4px rgba(150, 149, 149, 0.4);
+  border-style: none none solid none !important;
+  border-width: 2px !important;
+  border-color: #d2d2d2 !important;
 }
 
 @keyframes App-logo-spin {
