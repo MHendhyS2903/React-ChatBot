@@ -33,6 +33,7 @@ const LearningOptions = (props) => {
                     <label htmlFor="formGroupExampleInput">Masukan Saldo Awal</label>
                     <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Masukan Angka"></input>
                 </div>
+                
                 <button 
                 className="btn btn-success back"
                 onClick={props.actionProvider.handleJavascriptList}>
